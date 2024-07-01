@@ -1,0 +1,19 @@
+@import "../src/assets/Styles/Header.scss";
+@import "../src/assets/Styles/Hero.scss";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
