@@ -1,19 +1,18 @@
-@import "../src/assets/Styles/Header.scss";
-@import "../src/assets/Styles/Hero.scss";
-
-
+@import '../src/assets/Styles/Header.scss';
+@import '../src/assets/Styles/Hero.scss';
+@import '../src/assets/Styles/Footer.scss';
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .container {
-    max-width: 1220px;
-    padding: 0 10px;
-    margin: 0 auto;
+	max-width: 1220px;
+	padding: 0 10px;
+	margin: 0 auto;
 }
