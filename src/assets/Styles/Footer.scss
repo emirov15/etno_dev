@@ -1,43 +1,74 @@
 .footer {
     background: #000;
     max-width: 100%;
+    height: 211px;
+    color: white;
 }
-
-.footer-logo {
+.main-dev-logo {
     filter: invert(100%);
-    margin-top: 15px;
+
 }
-.footer__info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-.footer__info__text p {
-    max-width: 640px;
-    margin-right: 20px;
+.footer__info h1{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.03em;
-    color: #fff;
+    letter-spacing: .03em;
 }
-.footer__info__text img {
-    background: #fff;
+.footer__info{
+padding-top: 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 300px;
 }
+.footer__content{
+    padding-top: 30px;
+}
+
 .footer__info__icons {
     display: flex;
-    width: 100%;
-    width: 100%;
     color: #818896;
     font-size: 30px;
     gap: 20px;
+    transition: 0.3s;
+
 }
+.footer__info__icons-telegram:hover{
+    color: rgb(47, 154, 253);
+    transition: 0.3s;
+}
+.footer__info__icons-github:hover{
+    transition: 0.3s;
+color: white;
+}
+.footer__info__icons-facebook:hover{
+    transition: 0.3s;
+color: rgb(69, 69, 181);
+}
+.footer__info__icons-youtube:hover{
+    transition: 0.3s;
+color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 500px) {
     .footer__info {
         flex-direction: column;
     }
-    .footer__info__text p {
+    .footer__info h1 {
         font-size: 11px;
     }
     .footer__content {
