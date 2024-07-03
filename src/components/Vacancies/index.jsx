@@ -3,7 +3,7 @@ import React from 'react';
 const Vacancies = () => {
     return (
         <div>
-            vacansee
+            vacanseenpm s
         </div>
     );
 };
