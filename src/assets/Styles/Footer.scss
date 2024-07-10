@@ -1,7 +1,7 @@
 .footer {
     background: #000;
     max-width: 100%;
-    height: 211px;
+    height: 290px;
     color: white;
 }
 .main-dev-logo {
@@ -53,25 +53,25 @@ color: red;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 500px) {
     .footer__info {
         flex-direction: column;
     }
-    .footer__info h1 {
+    .footer__info__text p {
         font-size: 11px;
     }
     .footer__content {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
