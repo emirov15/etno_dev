@@ -1,8 +1,9 @@
 .footer {
     background: #000;
     max-width: 100%;
-    height: 290px;
+    height: 220px;
     color: white;
+    margin-top: 100px;
 }
 .main-dev-logo {
     filter: invert(100%);
@@ -63,9 +64,36 @@ color: red;
     .footer__content {
         width: 100%;
     }
+    
 }
-
-
+@media (max-width: 768px) {
+.footer__info{
+    padding-top: 28px;
+ gap: 1px;
+}
+.footer__info h1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+@media (max-width: 576px) {
+.footer__info__icons{
+gap: 13px;
+}
+}
+@media (max-width: 451px) {
+	.footer__content {
+    padding-top: 13px;
+    margin-right: 10px;
+}
+    .footer__info__icons {
+    margin-right: 240px;
+    margin-top: 20px;
+    }
+    .footer__info img{
+        display: none;
+    }
+}
 
 
 
