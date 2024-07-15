@@ -1,1 +1,130 @@
+#hero {
+	padding: 30px 0;
+	.hero-title {
+		display: flex;
+		padding: 20px 0 30px 0;
+		margin-right: 80px;
+	}
+    .jobs-list {
+        padding: 50px 0;
+    }
+    .heros-title {
+        display: flex;
+        padding: 30px 0;
+    }
+    .video-add button {
+	background: #6fcf97;
+	color: #fff;
+	width: 200px;
+	height: 40px;
+	border: none;
+	border-color: #6fcf97;
+}
+.video-add {
+	display: flex;
+	justify-content: end;
+}
+.video-block {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	min-width: 100%;
+	gap: 20px;
+}
+.main-block {
+	position: relative;
+}
+.first__block img {
+	width: 570px;
+	height: 361px;
+}
+.first__block-title {
+	position: absolute;
+	z-index: 10;
+	font-size: 25px;
+	width: 570px;
+	height: 355px;
+	top: 10px;
+	backdrop-filter: blur(10px);
+	color: white;
+}
+.first__block-organizer {
+	position: absolute;
+	z-index: 10;
+	width: 570px;
+	height: 355px;
+	top: 250px;
+	left: 10px;
+	color: white;
+}
+.first__block-data {
+	position: absolute;
+	top: 250px;
+	z-index: 10;
+	color: white;
+	left: 300px;
+}
+	.hero {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
 
+		&--foto {
+			position: relative;
+
+			img {
+				width: 1200px;
+				height: 400px;
+			}
+			&__text {
+				position: absolute;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				backdrop-filter: blur(5px);
+				z-index: 10;
+				color: rgb(245, 241, 241);
+				background-color: rgba(0, 0, 0, 0.3);
+				width: 1200px;
+				height: 400px;
+				top: 0px;
+				h4 {
+					position: absolute;
+					top: 20px;
+					left: 30px;
+					font-weight: 800;
+				}
+				h1 {
+					position: absolute;
+					top: 200px;
+					left: 30px;
+				}
+
+				&--par {
+					display: flex;
+					gap: 25px;
+					position: absolute;
+					top: 290px;
+					left: 30px;
+
+					&__kor1 {
+						h6 {
+							font-size: 16px;
+						}
+					}
+
+					&__kor2 {
+						h6 {
+							font-size: 16px;
+						}
+						
+					}
+                    
+				}
+                
+			}
+		}
+	}
+}
