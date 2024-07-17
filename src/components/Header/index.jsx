@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { SlArrowRightCircle } from 'react-icons/sl'
 import { VscClose } from 'react-icons/vsc'
 
@@ -21,6 +21,7 @@ function Header() {
 	function closeModal() {
 		setModal(false)
 	}
+	// const [headerUser,setHeaderUser] = useState(false)
 
 	return (
 		<div className='header'>
@@ -35,11 +36,11 @@ function Header() {
 					</div>
 
 					<div className='header__nav'>
-						<Link to='/vacancies'>Вакансии</Link>
-						<Link to='/events'>Мероприятия</Link>
-						<Link to='/video'>Видео</Link>
-						<Link to='/organizations'>Организации</Link>
-						<Link to='/community'>Сообщество</Link>
+						<NavLink to='/vacancies'>Вакансии</NavLink>
+						<NavLink to='/events'>Мероприятия</NavLink>
+						<NavLink to='/video'>Видео</NavLink>
+						<NavLink to='/organizations'>Организации</NavLink>
+						<NavLink to='/community'>Сообщество</NavLink>
 					</div>
 					<div className='header__menu-and-clicker'>
 						<div className='header__burger' onClick={toggleBurgerMenu}>
@@ -77,7 +78,9 @@ function Header() {
 							}}
 						>
 						</div>
-						<div className='header__enter'>
+						<div className='header__enter'
+						//  onClick={(e)=>setHeaderUser(true)}
+						 >
 							{modal ? (
 								<button onClick={closeModal} className='products'>
 									close
@@ -107,6 +110,10 @@ function Header() {
 					</div>
 				</div>
 			</div>
+			{/* <div className="header-user-bg" onClick={(e)=> setHeaderUser(false)}></div>
+			<div className="header-user">
+
+			</div> */}
 		</div>
 	)
 }
