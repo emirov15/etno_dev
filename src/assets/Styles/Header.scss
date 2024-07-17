@@ -27,6 +27,9 @@
     margin-top: 5px;
     gap: 70px;
 }
+.header__nav a.active{
+    color: black;
+}
 .header__nav a:hover{
     color: #a7b0c2ab;
     transition: 0.3s;
@@ -141,6 +144,7 @@
     margin-right: 15px;
 }
 
+
 .header__enter button {
     padding: 0 15px 0 0;
     display: flex;
@@ -171,6 +175,45 @@
 .header__enter__two span {
     display: flex;
 }
+.header-user{
+    width: 600px;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    z-index: 1000;
+}
+
+.header-user-bg{
+    width: 100%;
+    height: 100%;
+    background: #00000089;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     .header__nav {
         display: none;
