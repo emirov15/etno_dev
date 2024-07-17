@@ -21,7 +21,7 @@ function Header() {
 	function closeModal() {
 		setModal(false)
 	}
-	const [headerUser,setHeaderUser] = useState(false)
+	// const [headerUser,setHeaderUser] = useState(false)
 
 	return (
 		<div className='header'>
@@ -78,7 +78,9 @@ function Header() {
 							}}
 						>
 						</div>
-						<div className='header__enter' onClick={(e)=>setHeaderUser(true)}>
+						<div className='header__enter'
+						//  onClick={(e)=>setHeaderUser(true)}
+						 >
 							{modal ? (
 								<button onClick={closeModal} className='products'>
 									close
@@ -108,10 +110,10 @@ function Header() {
 					</div>
 				</div>
 			</div>
-			<div className="header-user-bg" onClick={(e)=> setHeaderUser(false)}></div>
+			{/* <div className="header-user-bg" onClick={(e)=> setHeaderUser(false)}></div>
 			<div className="header-user">
 
-			</div>
+			</div> */}
 		</div>
 	)
 }
