@@ -20,6 +20,47 @@
 	border: none;
 	border-color: #6fcf97;
 }
+.video-title h1{
+	display: inline-block;
+    font-size: 24px;
+		cursor: pointer;
+    letter-spacing: .03em;
+    text-decoration: none;
+    color: #a7b0c2;
+    font-weight: 700;
+    transition: opacity .2s
+}
+.video-title h1:hover{
+    color: #b2b8c4;
+
+}
+.hero-title h1{
+		display: inline-block;
+    font-size: 24px;
+		cursor: pointer;
+    letter-spacing: .03em;
+    text-decoration: none;
+    color: #a7b0c2;
+    font-weight: 700;
+    transition: opacity .2s
+}
+.hero-title h1:hover{
+	  color: #b2b8c4;
+
+}
+.heros-title h2{
+display: inline-block;
+    font-size: 24px;
+		cursor: pointer;
+    letter-spacing: .03em;
+    text-decoration: none;
+    color: #a7b0c2;
+    font-weight: 700;
+    transition: opacity .2s
+}
+.heros-title h2:hover{
+	  color: #b2b8c4;
+}
 .video-add {
 	display: flex;
 	justify-content: end;
@@ -29,39 +70,48 @@
 	grid-template-columns: 1fr 1fr;
 	min-width: 100%;
 	gap: 20px;
+	margin-top: 30px;
+	margin-bottom: -70px;
 }
 .main-block {
 	position: relative;
 }
 .first__block img {
-	width: 570px;
+	width: 600px;
 	height: 361px;
 }
 .first__block-title {
 	position: absolute;
 	z-index: 10;
-	font-size: 25px;
-	width: 570px;
-	height: 355px;
-	top: 10px;
-	backdrop-filter: blur(10px);
+	font-size: 23px;
+	width: 600px;
+	height: 362px;
+	top: -1px;
+	backdrop-filter: blur(15px);
 	color: white;
+	margin-right: 50px;
+}
+.first__block-title h2 {
+margin-top: 50px;
+margin-left: 40px;
 }
 .first__block-organizer {
 	position: absolute;
 	z-index: 10;
 	width: 570px;
 	height: 355px;
-	top: 250px;
+	top: 270px;
 	left: 10px;
 	color: white;
+	margin-left: 30px;
+
 }
 .first__block-data {
 	position: absolute;
-	top: 250px;
+	top: 270px;
 	z-index: 10;
 	color: white;
-	left: 300px;
+	left: 250px;
 }
 	.hero {
 		display: flex;
@@ -69,12 +119,13 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 30px;
+		// margin-left: -150px;
 
 		&--foto {
 			position: relative;
 
 			img {
-				width: 1200px;
+				width: 1250px;
 				height: 400px;
 			}
 			&__text {
@@ -83,11 +134,11 @@
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
-				backdrop-filter: blur(5px);
+				backdrop-filter: blur(7px);
 				z-index: 10;
 				color: rgb(245, 241, 241);
 				background-color: rgba(0, 0, 0, 0.3);
-				width: 1200px;
+				width: 1220px;
 				height: 400px;
 				top: 0px;
 				h4 {
