@@ -62,6 +62,9 @@ function Events() {
 						</div>
 					</div>
 				</Link>
+				<div className='btn2'>
+					<button>Следующая страница</button>
+				</div>
 			</div>
 		</div>
 	)

@@ -2,14 +2,32 @@ import { FaFacebookSquare, FaTelegramPlane, FaYoutube } from 'react-icons/fa'
 import { TfiGithub } from 'react-icons/tfi'
 import footerLogo from '../../assets/img/Dev kg logo.svg'
 import footerlogoKg from '../../assets/img/footer logo Kg.png'
+import { useNavigate } from 'react-router-dom'
+
 function Footer() {
+	const navigate = useNavigate()
+
+	function logoFooter() {
+		navigate('/')
+		setTimeout(() => {
+			const heroElement = document.getElementById('hero')
+			if (heroElement) {
+				heroElement.scrollIntoView({ behavior: 'smooth' })
+			}
+		}, 300) // Задержка в миллисекундах
+	}
 
 	return (
 		<div id='footer'>
 			<div className='footer'>
 				<div className='container'>
 					<div className='footer__content'>
-						<img className='main-dev-logo' src={footerLogo} alt='img' />
+						<img
+							className='main-dev-logo'
+							onClick={logoFooter}
+							src={footerLogo}
+							alt='Dev KG logo'
+						/>
 						<div className='footer__info'>
 							<div className='footer__h1_logoKg'>
 								<h1>
@@ -18,20 +36,32 @@ function Footer() {
 									администрируется членами нашего сообщества.
 								</h1>
 								<a href='https://www.net.kg/stat.php?id=6620&fromsite=6620'>
-									<img src={footerlogoKg} alt='img' />
+									<img src={footerlogoKg} alt='Footer logo KG' />
 								</a>
 							</div>
 							<div className='footer__info__icons'>
-								<a className='footer__info__icons-telegram'>
+								<a
+									href='https://t.me/'
+									className='footer__info__icons-telegram'
+								>
 									<FaTelegramPlane />
 								</a>
-								<a className='footer__info__icons-github'>
+								<a
+									href='https://github.com/'
+									className='footer__info__icons-github'
+								>
 									<TfiGithub />
 								</a>
-								<a className='footer__info__icons-facebook'>
+								<a
+									href='https://facebook.com/'
+									className='footer__info__icons-facebook'
+								>
 									<FaFacebookSquare />
 								</a>
-								<a className='footer__info__icons-youtube'>
+								<a
+									href='https://youtube.com/'
+									className='footer__info__icons-youtube'
+								>
 									<FaYoutube />
 								</a>
 							</div>
@@ -40,7 +70,6 @@ function Footer() {
 				</div>
 			</div>
 		</div>
-	
 	)
 }
 

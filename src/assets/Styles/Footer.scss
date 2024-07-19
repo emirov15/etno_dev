@@ -28,11 +28,13 @@ gap: 300px;
 
 .footer__info__icons {
     display: flex;
-    color: #818896;
     font-size: 30px;
     gap: 20px;
     transition: 0.3s;
-
+    cursor: pointer;
+}
+.footer__info__icons a{
+color:  #818896;
 }
 .footer__info__icons-telegram:hover{
     color: rgb(47, 154, 253);
