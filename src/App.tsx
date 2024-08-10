@@ -4,7 +4,7 @@ import Header from './components/Header';
 import { Route, Routes } from 'react-router-dom';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
-import Vacancies from './components/Vacancies';
+import Vacancies from './components/Vacancy';
 import Events from './components/Events'
 import Organizations from './components/Organizations'
 import Community from './components/Community'

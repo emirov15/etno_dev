@@ -1,214 +1,16 @@
-
-.jobs-contents {
-	margin-top: 30px;
-}
-.jobs-content {
-	width: 100%;
-	height: 83px;
-	background: #f1f4f9;
-	color: #191f5d;
-	font-size: 16px;
-	font-weight: 700;
-	margin-top: 3px;
-}
-.information img {
-	height: 50px;
-	width: 50px;
-}
-.information h4 span {
-	font-size: 14px;
-	letter-spacing: 0.03em;
-	color: #a7b0c2;
-	margin-bottom: 2px;
-}
-.information {
-	padding: 15px 30px 0 30px;
+.filter {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	justify-content: space-around;
-	margin-left: 70px;
-}
-.jobs-item-field-company {
-	padding-right: 20px;
-	display: flex;
-	align-items: center;
-	gap: 25px;
-	    margin-left: -163px;
-}
-.jobs-item-field-jobsTitle {
-	padding-right: 20px;
-}
-.jobs-item-field-salary {
-	padding-right: 20px;
-}
-.jobs-item-field-type {
-	padding-right: 20px;
-}
-.salary-type {
-	display: flex;
-	align-items: center;
-	gap: 65px;
-	margin-right: 50px;
-}
-.add-vacancies:hover {
-	background: #97d1af;
-	transition: 0.2s;
-}
-.add-vacancies {
-	background: #6fcf97;
-	color: #fff;
-	margin-left: 65pc;
-	font-weight: 700;
-	font-size: 14px;
-	width: 180px;
-	letter-spacing: 0.03em;
-	height: 38px;
-	text-decoration: none;
-	border: none;
-	cursor: pointer;
-	outline: none;
-	transition: 0.2s;
-}
-.next-page:hover{
-		background: #97d1af;
-	transition: 0.2s;
-}
-.next-page{
-margin-left: 500px;
-	background: #6fcf97;
-	color: #fff;
-	font-weight: 700;
-	font-size: 16px;
-	width: 200px;
-	letter-spacing: 0.03em;
-	height: 45px;
-	text-decoration: none;
-	border: none;
-	cursor: pointer;
-	outline: none;
-	transition: 0.2s;
-	margin-top: 20px;
-}
-@media (max-width: 1200px) {
-	.container {
-		width: 90%;
-	}
-	.add-vacancies {
-		margin-left: 56pc;
-	}
-	.footer__info h1 {
-		font-size: 13px;
-	}
-}
+	justify-content: flex-end;
+	align-items: flex-end;
 
-@media (max-width: 1024px) {
-	.add-vacancies {
-		margin-left: 46.3pc;
-	}
-	.information {
-		margin-left: 50px;
-	}
-	.next-page{
-		// margin-right: 100px;
-		margin-left: 380px;
-	}
-}
-
-@media (max-width: 992px) {
-	.add-vacancies {
-		margin-left: 44.5pc;
-	}
-	.information {
-		margin-left: 59px;
-	}
-	.next-page{
-		margin-left: 350px;
-	}
-}
-
-@media (max-width: 768px) {
-	.jobs-content {
-		// width: 123%;
-		height: 136px;
-	}
-	.add-vacancies {
-		margin-left: 32pc;
-	}
-	.information {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		gap: 20px;
-		justify-content: space-between;
-	}
-	.information img {
-		margin-bottom: -65px;
-	}
-	.jobs-item-field-company h4 {
-		margin-left: -5px;
-	}
-	.jobs-item-field-jobsTitle h4 {
-		margin-right: 130px;
-	}
-	.jobs-item-field-type h4 {
-		margin-left: 40px;
-	}
-		.next-page{
-		margin-left: 270px;
-	}
-}
-
-
-@media (max-width: 576px) {
-	.add-vacancies {
-		margin-left: 21pc;
-	}
-	.jobs-item-field-jobsTitle h4 {
-		margin-right: -6px;
-	}
-		.next-page{
-		margin-left: 170px;
-	}
-}
-
-@media (max-width: 451px) {
-	.add-vacancies {
-		margin-left: 13.5pc;
-	}
-	.jobs-content{
-		height: 188px;
-
-	}
-	.information{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0px;
-	}
-	    .information img {
-        margin-bottom: -25px;
-				margin-left: -170px;
-    }
-		    .jobs-item-field-jobsTitle h4 {
-        margin-right: 129px;
-    }
-		   .jobs-item-field-type h4 {
-        margin-left: -220px;
-        padding-top: 73px;
-    }
-		.jobs-item-field-type {
-    padding-right: 14px;
-}
-		
-.salary-type {
-	gap: 0;
-	margin-right: 50px;
-	margin-top: -35px;
-}
-	.next-page{
-		margin-left: 100px;
+	button {
+		margin: 0 0 0 20px;
+		padding: 10px 25px;
+		border: none;
+		background: #6fcf97;
+		color: #fff;
+		font-size: 14px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -220,7 +22,6 @@ margin-left: 500px;
 	font-size: 16px;
 	letter-spacing: 0.03em;
 	font-weight: 700;
-
 }
 .content {
 	max-width: 1176px;
@@ -279,7 +80,6 @@ margin-left: 500px;
 	object-fit: cover;
 	-o-object-position: center;
 	object-position: center;
-
 }
 img {
 	max-height: 100%;
@@ -287,8 +87,7 @@ img {
 }
 .information {
 	display: flex;
-	width: 95%;
-
+	width: 100%;
 }
 .company {
 	flex: 0 0 25%;
@@ -304,7 +103,6 @@ img {
 	font-size: 16px;
 	letter-spacing: 0.03em;
 	font-weight: 700;
-
 }
 .label {
 	display: block;
@@ -322,7 +120,6 @@ img {
 	font-size: 16px;
 	letter-spacing: 0.03em;
 	font-weight: 700;
-
 }
 .position {
 	flex: 0 0 30%;
