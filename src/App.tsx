@@ -9,6 +9,7 @@ import Events from './components/Events'
 import Organizations from './components/Organizations'
 import Community from './components/Community'
 import Video from './components/Video';
+import Login from './components/Login/Login';
 
 function App() {
     return (
@@ -17,10 +18,11 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Hero />} />
 					<Route path='/Vacancies' element={<Vacancies />} />
-					<Route path='/events' element={<Events/>} />
-					<Route path='/video' element={<Video/>} />
-					<Route path='/organizations' element={<Organizations/>} />
-					<Route path='community' element={<Community/>} />
+					<Route path='/events' element={<Events />} />
+					<Route path='/video' element={<Video />} />
+					<Route path='/organizations' element={<Organizations />} />
+					<Route path='community' element={<Community />} />
+					<Route path='/login' element={<Login/>} />
 				</Routes>
 				<Footer />
 			</div>
