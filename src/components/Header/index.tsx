@@ -5,7 +5,7 @@ import { TbMenu2 } from 'react-icons/tb'
 import { IoCloseSharp } from 'react-icons/io5'
 
 const Header: React.FC = () => {
-	const [menu, setMenu] = useState< boolean >(false)
+	const [menu, setMenu] = useState<Boolean>(false)
 	const nav = useNavigate()
 	return (
 		<div id='header'>
