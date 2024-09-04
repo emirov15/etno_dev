@@ -2,11 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import useFetch from '../../hooks/useFetch'
 import EventsList from './EventsList'
+import Loading from '../ui/Loading'
+
 
 function Events() {
 	const events_url = 'http://3.38.98.134/events'
+	const { data, loading } = useFetch()
 
-	const { data, loading } = useFetch({ url: events_url })
+	if (loading) {
+		return <Loading />
+	}
 
 	return (
 		<div id='events'>

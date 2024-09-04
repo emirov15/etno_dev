@@ -2,26 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { VacancyList } from './VacancyList'
 import useFetch from '../../hooks/useFetch'
-import loadingImg from '../../assets/img/loading.svg'
+import Loading from '../../components/ui/Loading'
 
 const Vacancy = () => {
 	const { data, loading } = useFetch()
 
 	if (loading) {
-		return (
-			<div
-				className='loading'
-				style={{
-					display: 'flex',
-					alignItems: 'center',
-					justifyContent: 'center',
-				}}
-			>
-				<img src={loadingImg} alt='img' />
-			</div>
-		)
+		return <Loading />
 	}
-
 	return (
 		<div id='vacancies'>
 			<div className='container'>
@@ -32,7 +20,7 @@ const Vacancy = () => {
 								<button>Добавить вакансию</button>
 							</Link>
 						</div>
-						{data &&
+						{data && data.length > 0 ? (
 							data.map((job: any) => {
 								return (
 									<VacancyList
@@ -48,7 +36,10 @@ const Vacancy = () => {
 										organization_icon={job.organization_icon}
 									/>
 								)
-							})}
+							})
+						) : (
+							<p>Нет доступных вакансий</p>
+						)}
 					</div>
 				</div>
 			</div>

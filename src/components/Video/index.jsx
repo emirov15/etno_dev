@@ -1,6 +1,7 @@
 import logo from '../../assets/img/logo.jpg'
 
 const video = () => {
+	
 	return (
 		<div>
 			<>
