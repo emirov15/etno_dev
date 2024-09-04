@@ -4,6 +4,7 @@ import Video from '../Video'
 import Vacancy from '../Vacancy'
 
 const Home = () => {
+
 	return (
 		<div id='home'>
 			<div className='home'>
