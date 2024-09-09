@@ -10,6 +10,10 @@ import Community from './components/Community'
 import Video from './components/Video'
 import Login from './components/Login/Login'
 import Organizations from './components/Organizations'
+import RouterProtector from './components/RouterProtector'
+import AddVacan from './components/AddVacancy'
+import AddEvents from './components/AddEvents'
+import Auth from './components/Auth'
 
 function App() {
 	return (
@@ -20,9 +24,26 @@ function App() {
 				<Route path='/Vacancies' element={<Vacancies />} />
 				<Route path='/events' element={<Events />} />
 				<Route path='/video' element={<Video />} />
-				<Route path='/organizations' element={<Organizations/>} />
+				<Route path='/organizations' element={<Organizations />} />
 				<Route path='community' element={<Community />} />
 				<Route path='/login' element={<Login />} />
+				v <Route path='/auth' element={<Auth/>} />
+				<Route
+					path='/addVacan'
+					element={
+						<RouterProtector>
+							<AddVacan />
+						</RouterProtector>
+					}
+				/>
+				<Route
+					path='/addEvents'
+					element={
+						<RouterProtector>
+							<AddEvents />
+						</RouterProtector>
+					}
+				/>
 			</Routes>
 			<Footer />
 		</div>
