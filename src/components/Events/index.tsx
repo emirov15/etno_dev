@@ -8,6 +8,7 @@ import Loading from '../ui/Loading'
 function Events() {
 	const events_url = 'http://3.38.98.134/events'
 	const { data, loading } = useFetch()
+	
 
 	if (loading) {
 		return <Loading />

@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react'
 import useFetch from '../../hooks/useFetch'
 import OrganizationList from './OrganizationList'
-import Loading from '../../components/ui/Loading'
+import Loading from '../ui/Loading'
+
 
 const Organizations = () => {
-	const { data, loading } = useFetch()
+	const { data, loading } = useFetch({
+		url: 'http://3.38.98.134/organizations',
+	})
 
 	if (loading) {
 		return <Loading />
 	}
+
 	return (
 		<div id='organizations'>
 			<div className='container'>
