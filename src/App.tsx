@@ -27,7 +27,7 @@ function App() {
 				<Route path='/organizations' element={<Organizations />} />
 				<Route path='community' element={<Community />} />
 				<Route path='/login' element={<Login />} />
-				v <Route path='/auth' element={<Auth/>} />
+				v <Route path='/auth' element={<Auth />} />
 				<Route
 					path='/addVacan'
 					element={

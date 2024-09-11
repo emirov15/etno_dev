@@ -3,28 +3,37 @@ import { Link } from 'react-router-dom'
 import useFetch from '../../hooks/useFetch'
 import EventsList from './EventsList'
 import Loading from '../ui/Loading'
+import { API } from '../../API/index'
+import { ResourceItem2 } from '../../components/type/Events'
 
 
-function Events() {
-	const events_url = 'http://3.38.98.134/events'
-	const { data, loading } = useFetch()
+
+const Events = ({ count = -1 }) => {
+		const { data, loading } = useFetch(
+			{ 
+			url: `${API}/events` 
+		});
+
+		if (loading) {
+			return <Loading />
+		}
 	
 
-	if (loading) {
-		return <Loading />
-	}
 
 	return (
 		<div id='events'>
 			<div className='container'>
 				<div className='btn1'>
-					<button>Добавить мероприятиe</button>
+					<Link to={'/addEvents'}>
+						{' '}
+						<button>Добавить мероприятиe</button>
+					</Link>
 				</div>
 				{data &&
-					data.map((el: any, idx: number) => {
+					data.slice(0, count).map((el: ResourceItem2, index: number) => {
 						return (
 							<EventsList
-								key={idx}
+								key={index}
 								location={el.location}
 								name={el.name}
 								organization_name={el.organization_name}
